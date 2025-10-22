@@ -22,7 +22,7 @@ export const Logo: FunctionComponent<LogoProps> = ({
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
         src={logoUrl}
-        alt="Mosey Bank Logo"
+        alt="Mosey Health Logo"
         fill
         unoptimized
         priority

@@ -50,7 +50,7 @@ export const ArticleCard : FunctionComponent<ArticleCardProps> = ({ article, and
                 {/* @ts-expect-error */}
                 <Image src={ article.image.src } width={ article.image.width } height={ article.image.height } className='w-full rounded-[20px]' alt={ article.image.alt ?? '' } />
                 <div className="flex justify-between mb-[16px]">
-                    <p className="!text-[12px] text-pale-sky my-0">{ byLabel } { authors ? authors : 'Mosey Bank'}</p>
+                    <p className="!text-[12px] text-pale-sky my-0">{ byLabel } { authors ? authors : 'Mosey Health'}</p>
                     <p className="!text-[12px] text-pale-sky my-0"><DateDisplay value={ article.published } /></p>
                 </div>
                 <h3 className="my-0 mt-[16px]">{ article.title }</h3>

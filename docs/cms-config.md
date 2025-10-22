@@ -29,8 +29,8 @@ With the content now imported, the next step is to do the initial configuraiton 
 
 | Field | Instruction |
 | - | - |
-| Application Name | The name for the application, use "Mosey Bank" or a name you've selected yourself
-| Choose Start page | Select `From Existing`, and then the start page of the website, that is "Mosey Bank" for the included content pack |
+| Application Name | The name for the application, use "Mosey Health" or a name you've selected yourself
+| Choose Start page | Select `From Existing`, and then the start page of the website, that is "Mosey Health" for the included content pack |
 
 ![Alt text](./cms-site1.png "Create website")
 

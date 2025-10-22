@@ -28,15 +28,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: base,
     title: {
-      default: `Mosey Bank - An Optimizely Demo Company`,
-      template: `%s | Mosey Bank - An Optimizely Demo Company`,
+      default: `Mosey Health - An Optimizely Demo Company`,
+      template: `%s | Mosey Health - An Optimizely Demo Company`,
     },
     openGraph: {
       title: {
-        default: `Mosey Bank - An Optimizely Demo Company`,
-        template: `%s | Mosey Bank - An Optimizely Demo Company`,
+        default: `Mosey Health - An Optimizely Demo Company`,
+        template: `%s | Mosey Health - An Optimizely Demo Company`,
       },
-      siteName: "Mosey Bank",
+      siteName: "Mosey Health",
       images: [
         {
           url: "/apple-touch-icon.png",

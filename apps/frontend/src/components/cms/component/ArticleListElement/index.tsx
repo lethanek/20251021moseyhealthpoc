@@ -133,7 +133,7 @@ export const ArticleListElementElement: CmsComponent<
                 />
                 <div className="flex justify-between mb-[16px]">
                   <p className="text-[12px] text-pale-sky my-0">
-                    {byLabel} {authors ? authors : "Mosey Bank"}
+                    {byLabel} {authors ? authors : "Mosey Health"}
                   </p>
                   <p className="text-[12px] text-pale-sky my-0">
                     <DateDisplay

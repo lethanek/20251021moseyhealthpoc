@@ -11,9 +11,9 @@ export default function manifest() : MetadataRoute.Manifest
 {
     return {
         id: "@optly/saas-cms-demo",
-        name: `Mosey Bank online`,
-        short_name: "Mosey Bank",
-        description: "The Mosey Bank digital environment",
+        name: `Mosey Health online`,
+        short_name: "Mosey Health",
+        description: "The Mosey Health digital environment",
         icons:[
             {src:"/android-chrome-192x192.png",sizes:"192x192",type:"image/png"},
             {src:"/android-chrome-512x512.png",sizes:"512x512",type:"image/png"}

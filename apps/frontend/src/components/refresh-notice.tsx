@@ -18,6 +18,6 @@ export const RefreshNotice : FunctionComponent<RefreshNoticeProps> = ({ title, m
         </div>
     </Dialog>
 }
-RefreshNotice.displayName = "Mosey Bank Refresh Notice"
+RefreshNotice.displayName = "Mosey Health Refresh Notice"
 
 export default RefreshNotice
