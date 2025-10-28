@@ -7,7 +7,7 @@
     "dev:https": "next dev --turbo --experimental-https --experimental-https-key ./certificates/localhost-key.pem --experimental-https-cert ./certificates/localhost.pem",
     "config": "opti-graph config:create",
     "build:fast": "next build --turbo",
-    "build": "graphql-codegen && opti-fx pull -x pagevariant- && next build --turbo && opti-graph webhook:create",
+    "build": "graphql-codegen && next build --turbo && opti-graph webhook:create",
     "start": "next start",
     "lint": "next lint",
     "compile": "graphql-codegen",
