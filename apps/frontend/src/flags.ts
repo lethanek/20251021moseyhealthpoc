@@ -17,13 +17,7 @@ const { projectId } = readConfigFromEnv()
  * @see https://app.optimizely.com/v2/projects/your-project-id/flags/manage/site_search
  */
 export const site_search = flag<OptimizelyFlag<{
-  /**
-   * 
-   *
-   * @defaultValue 
-   * @opti string
-   */
-  content_id: string,
+
   /**
    * The weight to be applied to the topics retrieved from Optimizely Content Recommendations for a personalized search result
    *
@@ -56,14 +50,14 @@ export const site_search = flag<OptimizelyFlag<{
     key: 'site_search',
     origin: `https://app.optimizely.com/v2/projects/${projectId}/flags/manage/site_search/variations`,
     description: 'Configure the Site Search capabilities, built into the site using Optimizely Graph, Optimizely Data Platform and Optimizely Content Recommendations',
-    defaultValue: {"_enabled":false,"content_id":"","interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false},
+    defaultValue: {"_enabled":false,"interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false},
     async decide() {
         "use server"
         const ctx = await getUserContext()
         type DecisionVariables = typeof this.decide extends (Decide<OptimizelyFlag<infer O>, any> | undefined) ? O : false
         const decision = ctx?.decide("site_search") as TypedOptimizelyDecision<DecisionVariables>
         if (!decision)
-           return {"_enabled":false,"content_id":"","interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false};
+           return {"_enabled":false,"interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false};
         return {
             _enabled: decision.enabled,
             ...decision.variables
@@ -72,7 +66,7 @@ export const site_search = flag<OptimizelyFlag<{
     options: [
         {
             label: "Off",
-            value: {"_enabled":false,"content_id":"","interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false}
+            value: {"_enabled":false,"interest_boost":200,"recent_search_count":5,"show_recent_searches":false,"use_personalization":false}
         }
     ]
 })
